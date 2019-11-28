@@ -1,1 +1,14 @@
-<p>number-search works!</p>
+<div>
+    Seleted Number : {{NumberDetails.SelectedNumber}} 
+</div>
+<div>
+    Seleted Plan : {{NumberDetails.Plan}} 
+</div>
+<div>
+    Seleted Number Type : {{NumberDetails.NumberType}} 
+</div>
+<select [(ngModel)]="SerarchType" (change)="OnSearchTypeChanged(SerarchType)">
+    <option value="800 Numbers">800 Numbers</option>
+    <option  value="Vanity Numbers">Vanity Numbers</option>
+    <option value="Standard Numbers">Standard Numbers</option>
+</select>

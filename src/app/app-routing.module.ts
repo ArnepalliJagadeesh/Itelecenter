@@ -10,7 +10,7 @@ import { PaymentComponent } from './Components/payment/payment.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'Home', pathMatch: 'full' },
+  { path: '', component: HomeComponent  },
   { path: 'Home', component: HomeComponent },
   { path: 'HowItWorksAndFeatures', component: HowItWorksAndFeaturesComponent },
   { path: 'PricingAndPlans', component: PricingAndPlansComponent },

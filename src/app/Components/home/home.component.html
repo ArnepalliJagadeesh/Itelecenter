@@ -1,1 +1,8 @@
 <p>home works!</p>
+
+<select [(ngModel)]="SerarchType" (change)="OnSearchTypeChanged(SerarchType)">
+    <option value="800 Numbers">800 Numbers</option>
+    <option  value="Vanity Numbers">Vanity Numbers</option>
+    <option value="Standard Numbers">Standard Numbers</option>
+</select>
+<button value="Submit" (click)="OnSubmit()" > Submit</button>
